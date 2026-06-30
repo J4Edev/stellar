@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "stellar",
+  "version": "0.1.0",
+  "name": "Stellar",
+  "description": "A Skyblock client mod built on CKittya.",
+  "authors": [
+    "MikaSukie"
+  ],
+  "icon": "assets/stellar/icon.png",
+  "contact": {
+    "sources": "discord: za_cat"
+  },
+  "license": "GPL3.0-or-later",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.stellar.Client"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": [
+      "26.2"
+    ],
+    "java": ">=25",
+    "fabric-api": "*",
+    "ckittya": "*"
+  }
+}
