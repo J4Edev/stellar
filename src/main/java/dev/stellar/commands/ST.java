@@ -28,11 +28,21 @@ public class ST {
     private static void registerCommands(CommandDispatcher<FabricClientCommandSource> dispatcher, Object registryAccess) {
 
         dispatcher.register(literal("st").executes(ctx -> {
-            OPEN_REQUESTED.set(true);
+            OpenUI();
             return 1;
         }));
 
-        dispatcher.register(literal("stellar").redirect(dispatcher.getRoot().getChild("st")));
-        dispatcher.register(literal("ste").redirect(dispatcher.getRoot().getChild("st")));
+        dispatcher.register(literal("stellar").executes(ctx -> {
+            OpenUI();
+            return 1;
+        }));
+        dispatcher.register(literal("ste").executes(ctx -> {
+            OpenUI();
+            return 1;
+        }));
+    }
+
+    private static void OpenUI() {
+        OPEN_REQUESTED.set(true);
     }
 }
