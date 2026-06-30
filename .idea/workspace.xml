@@ -80,7 +80,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.stellar [build]">
+  <component name="RunManager" selected="Gradle.stellar [clean]">
     <configuration name="stellar [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -171,8 +171,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.stellar [build]" />
         <item itemvalue="Gradle.stellar [clean]" />
+        <item itemvalue="Gradle.stellar [build]" />
         <item itemvalue="Gradle.stellar [init]" />
         <item itemvalue="Gradle.stellar [wrapper]" />
       </list>
