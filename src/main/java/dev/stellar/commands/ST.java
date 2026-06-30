@@ -1,6 +1,7 @@
 package dev.stellar.commands;
 
 import com.mojang.brigadier.CommandDispatcher;
+import dev.stellar.Client;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
 import net.minecraft.client.Minecraft;
@@ -19,7 +20,7 @@ public class ST {
 
         dispatcher.register(literal("st").executes(ctx -> {
             Minecraft.getInstance().setScreenAndShow(
-                    new CustomScreen(Component.literal("Stellar UI"))
+                    new Client.StellarScreen()
             );
             return 1;
         }));
